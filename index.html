@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <h1>THE CODE REVIEW</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="signup">
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </div> <!-- /.signup -->
+            <div class="form">
+                <form>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <div class="first">
+                            <label for="name">Full Name</label><br>
+                            <input type="text" id="name" name="user_name" placeholder="Required"><br>
+                            <label for="email">Email Address</label><br>
+                            <input type="email"  id="email" name="user_email" placeholder="Required"><br>
+                            <label for="phone">Phone Number</label><br>
+                            <input type="tel" id="phone" name="user_phone"><br>
+                            <label for="address">Street Address</label><br>
+                            <input type="text" id="address" name="user_address"><br>
+                            <label for="city">City</label><br>
+                            <input type="text" id="city" name="user_city"><br>
+                            <label for="state">State</label><br>
+                            <select id="state" name="user_state"><br>
+                                <option value="" disabled selected>Choose State</option><br>
+                            </select><br>
+                            <label for="zip">Zip Code</label><br>
+                            <input type="text" id="zip" name="user_zip">
+                        </div> <!-- /.first -->
+                    </fieldset>
+                    <fieldset>
+                        <legend>Newsletter</legend>
+                        <div class="second">
+                            <label>Select the newsletters you would like to receive</label><br>
+                            <input type="checkbox" id="html-news" value="html-news" name="user_news"><label for="html-news">HTML News</label><br>
+                            <input type="checkbox" id="css-news" value="css-news" name="user_news"><label for="css-news">CSS News</label><br>
+                            <input type="checkbox" id="javascript-news" value="javascript-news" name="user_news"><label for="javascript-news">Javascript News</label><br>
+                            <label>Newsletter format</label><br>
+                            <input type="radio" id="html-format" value="html-format" name="format"><label for="html-format">HTML</label><br>
+                            <input type="radio" id="plain-text-format" value="plain-text-format" name="format"><label for="plain-text-format">Plain text</label><br>
+                            <label for="other">Other topics you'd like to hear about</label><br>
+                            <textarea id="other" name="user_other"></textarea><br>
+                            <button type="submit">Sign Up</button>
+                        </div> <!-- /.second -->
+                    </fieldset>
+                </form>
+            </div> <!-- /.form -->
+        </div> <!-- /.container -->
+    </main>
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>   
+</body>
+</html>
