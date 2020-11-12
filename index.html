@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Merriweather">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,28 +22,40 @@
             </div> <!-- /.signup -->
             <div class="form">
                 <form>
-                    <fieldset>
+                    <fieldset class="contact-info">
                         <legend>Contact Information</legend>
-                        <div class="first">
+                        <div class="flex-pair">
                             <label for="name">Full Name</label><br>
-                            <input type="text" id="name" name="user_name" placeholder="Required"><br>
+                            <input type="text" id="name" name="user_name" placeholder="Required" required><br>
+                        </div>
+                        <div class="flex-pair">
                             <label for="email">Email Address</label><br>
-                            <input type="email"  id="email" name="user_email" placeholder="Required"><br>
+                            <input type="email"  id="email" name="user_email" placeholder="Required" required><br>
+                        </div>
+                        <div class="flex-pair">
                             <label for="phone">Phone Number</label><br>
                             <input type="tel" id="phone" name="user_phone"><br>
+                        </div>
+                        <div class="flex-pair">
                             <label for="address">Street Address</label><br>
-                            <input type="text" id="address" name="user_address"><br>
+                            <input type="text" id="address" name="user_address" placeholder="Required" required><br>
+                        </div>
+                        <div class="flex-pair">
                             <label for="city">City</label><br>
                             <input type="text" id="city" name="user_city"><br>
+                        </div>
+                        <div class="flex-pair">
                             <label for="state">State</label><br>
-                            <select id="state" name="user_state"><br>
-                                <option value="" disabled selected>Choose State</option><br>
+                            <select id="state" name="user_state">
+                                <option value="" disabled selected>Choose State</option>
                             </select><br>
+                        </div>
+                        <div class="flex-pair">
                             <label for="zip">Zip Code</label><br>
                             <input type="text" id="zip" name="user_zip">
-                        </div> <!-- /.first -->
+                        </div> 
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="newsletter">
                         <legend>Newsletter</legend>
                         <div class="second">
                             <label>Select the newsletters you would like to receive</label><br>
